@@ -1,7 +1,7 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
     console.log( "ready!" );
-
+    // window.location.hash = "";
     $('#mobile-menu').on("click", function(e){
     	var nav = $('.nav-col');
     	if(nav.is(':visible')){
@@ -12,7 +12,11 @@ $( document ).ready(function() {
     });
 
     $('aside.menu-wrapper a').on('click', function(e) {
+      $('.highlighted').removeClass('highlighted');
     	var link = $(this);
+      var button = link.find('.menu-button');
+      button.addClass('highlighted')
+      console.log(button);
     	var linkHash = link[0].hash;
       if (!$(linkHash).is(':visible')) {
         var visElm = $('.body-info:visible');
@@ -30,6 +34,14 @@ $( document ).ready(function() {
 function showDefault() {
   var visElm = $('.body-info:visible');
   if (visElm.length == 0) {
-    $('#about').show();
+    var hash = window.location.hash;
+    var cleanHash = hash.replace('#','');
+    if (hash.length > 0) {
+      $(hash).show();
+      $('.menu-' + cleanHash).addClass('highlighted');
+    } else {
+      $('#about').show();
+      $('.menu-about').addClass('highlighted');
+    }
   }
 }
