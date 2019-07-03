@@ -1,0 +1,835 @@
+/*Font classes*/
+.gothic{
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+.cinzel{
+    font-family: 'Cinzel', serif;
+}
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr{
+    border-color: #cccccc;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+
+
+/* This is for the navigation section*/
+/* The side navigation menu */
+
+.navbar-verticle {
+    background-color: #FFFFFF; /* White */
+    border-right: solid #999 1px;
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.navbar-verticle a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.navbar-verticle a:hover, .offcanvas a:focus {
+    color: #FF6600;
+}
+
+.nav-content{
+    padding-top: 125px;
+}
+
+.name{
+    padding-left: 75px;
+    padding-bottom: 75px;
+    text-decoration: none;
+}
+
+.name a{
+    font-size: 48px;
+    padding: 0;
+    color: #000;
+}
+
+.verticle-menu{
+    list-style: none;
+    /*width:250px;*/
+}
+
+.verticle-menu li{
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.verticle-menu li:hover{
+    font-size: 1.5em;
+}
+
+.verticle-menu li a {
+    font-size: 1em;
+    color: #000;
+}
+
+.social{
+    list-style: none;
+    margin-top: 100%;
+    padding-left: 0px;
+}
+
+.social li{
+    display: inline;
+
+}
+
+.social li a{
+    display: inline;
+    font-size: 2em;
+    padding: 0 5px;
+}
+
+.fa-facebook-official{
+    color: #3b5998;
+    transition: 0.5s;
+}
+
+.fa-linkedin{
+    color: #007bb6;
+    transition: 0.5s;
+}
+
+.fa-github-square{
+    color: #000;
+    transition: 0.5s;
+}
+
+.fa-envelope{
+    color: #34DDDD;
+    transition: 0.5s;
+}
+
+.social a > i:hover{
+    color: #FF6600;
+    transition: 0.5s;
+}
+
+/* End on navigation section*/
+
+/* Home page section*/
+
+.landing-img-container .jumbotron{
+    background-image: url("../img/joel-filipe-151705.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom 40%;
+}
+
+#home-jumbo{
+    height: 100%;
+    width: 100%;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    border-radius: 0;
+}
+
+.word-box{
+    border: solid #2e3436 3px;
+    border-radius: 3px;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 500px;
+    transition: 5s;
+}
+
+.word-box:hover{
+    color: #FF6600;
+    border: solid #FF6600 3px;
+    transition: 0.5s;
+}
+
+
+/* End of front page*/
+
+/* Resume section*/
+.resume-container{
+    margin-bottom: 100px;
+}
+
+.resume-header{
+    text-align: right;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.job-title{
+    text-align: right;
+}
+
+.job-description{
+    padding-left: 50px;
+    border-left: solid black 1px;
+}
+
+.job-description li{
+    text-align: left;
+}
+
+.resume-row-seperator{
+    padding-bottom: 75px;
+}
+
+.education{
+    text-align: right;
+}
+/* End of resume section*/
+
+/* About me section*/
+.about-container{
+    margin-top: 75px;
+    padding-left: 50px;
+}
+
+.about-spacer{
+    padding-bottom: 75px;
+}
+
+.about-me{
+    text-align: justify;
+    line-height: 2;
+}
+
+#about-jumbo{
+    height: 400px;
+    margin-bottom: 75px;
+}
+
+.about-container .jumbotron{
+    background: url("../img/emile-perron-190221.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+}
+/* End of About Me Section*/
+
+/* Portfolio Section */
+.portfolio-container{
+    margin-top: 20px;
+    padding-left: 150px;
+}
+
+/*
+Section for image overlay
+*/
+.item:hover .item-overlay.top {
+    top: 0;
+    opacity: 1;
+}
+
+
+/*
+Styling of overlay but is still visible
+*/
+.item-overlay {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    opacity: 0;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    -moz-transition: opacity .30s ease-in-out;
+    -webkit-transition: opacity .30s ease-in-out;
+    transition: opacity .30s ease-in-out;
+}
+/*
+Hide Overlay
+*/
+.item-overlay.top {
+    top: 100%;
+}
+
+
+/* misc. CSS */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    position: relative;
+    float: left;
+    margin: 5px;
+    overflow: hidden;
+    width: 300px
+
+}
+.item img {
+    width: 300px;
+    height: 300px;
+
+}
+/* end of misc. CSS */
+
+.btn-primary-outline {
+    background-color: transparent;
+    border-color: #ccc;
+    border-radius:23px;
+    border: 2px solid #ccc;
+    transition: 0.5s;
+}
+
+.btn-primary-outline:hover{
+    border-color: #000;
+    color: #FF6600;
+    transition: 0.5s;
+    border: 2px solid #FF6600;
+}
+
+.make-caps{
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+/* End of Portfolio Section*/
+
+/* Credits Section */
+
+.thanks-content{
+    margin-left: 40px;
+}
+
+.tech-list{
+    list-style: none;
+    margin-left: 40px;
+}
+
+
+/* End of Credits Section*/
+
+@media all and (min-width: 320px)  {
+    body{
+        width: 100%;
+	height:100%;
+    }
+
+    /* Navbar */
+    .navbar-fixed-side {
+        height: 100%;
+    }
+
+    .name{
+        margin: 0;
+    }
+
+    .verticle-menu li{
+        margin: 0;
+        margin-left: 40px;
+    }
+
+    div.credits a{
+        padding: 0;
+        font-size: 1em;
+    }
+
+    div.credits{
+        position: relative;
+    }
+
+    div.credits a{
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .social{
+        margin-top: 65px;
+    }
+    /*End Navbar*/
+    /* Home*/
+
+    /* End Home Page*/
+    /* Portfolio */
+    .portfolio-container{
+        margin: 0;
+        padding: 0;
+    }
+    /* End Portfoilio Page*/
+    /* Resume */
+    .job-description{
+        /*padding-left: 50px;*/
+        border-left: none;
+    }
+
+    .resume-row-seperator{
+        padding-bottom: 50px;
+    }
+
+    h2.montserrat.education{
+        margin: 0;
+    }
+    /* End Resume Page*/
+    /* About */
+    .about-container{
+        margin-top: 75px;
+        padding-left: 0;
+    }
+
+    .about-spacer{
+        padding-bottom: 75px;
+    }
+    /* End About Page*/
+    /* Credits */
+
+    /* End Credits Page */
+}
+
+
+@media all and (max-width: 768px) and (min-width: 650px){
+    /* Navbar */
+    .navbar-fixed-side {
+        height: 100%;
+    }
+    /*End Navbar*/
+
+    /* Home*/
+    .landing-img-container{
+        margin-top: 30px;
+    }
+
+    #home-jumbo{
+        padding-bottom: 225px;
+    }
+
+    .word-box{
+        margin-top: 445px;
+    }
+    /* End Home Page*/
+
+    /* Portfolio */
+    .portfolio-container{
+        margin-top: 65px;
+    }
+
+    .item {
+        max-width: 170px;
+        max-height: 170px;
+    }
+    .item img{
+        max-width: 170px;
+        max-height: 170px;
+    }
+    .make-caps {
+        padding-top: 25px;
+    }
+    /* End Portfoilio Page*/
+    /* Resume */
+    .resume-container{
+        margin-bottom: 50px;
+        max-width: 550px;
+    }
+
+    .resume-header{
+        text-align: right;
+        margin: 65px 10px;
+    }
+
+    .job-title{
+        text-align: right;
+    }
+
+    .job-description{
+        padding-left: 60px;
+        border: none;
+    }
+
+    .job-description li{
+        text-align: left;
+    }
+
+    .resume-row-seperator{
+        padding-bottom: 50px;
+    }
+
+    .education{
+        text-align: right;
+    }
+
+    h2.montserrat.education{
+        margin: 0;
+    }
+    /* End Resume Page*/
+    /* About */
+    .about-container{
+        max-width: 550px;
+        margin-top: 75px;
+        padding-left: 0;
+    }
+
+    .about-spacer{
+        padding-bottom: 75px;
+    }
+    /* End About Page*/
+    /* Credits */
+
+    /* End Credits Page */
+}
+
+@media all and (max-width: 1024px) and (min-width: 769px) {
+    /* Navbar */
+
+    /*End Navbar*/
+    /* Home*/
+    .landing-img-container{
+        margin-top: 30px;
+    }
+
+    #home-jumbo{
+        padding-bottom: 200px;
+    }
+
+    .word-box{
+        margin-top: 470px;
+    }
+
+    .social{
+        margin-top: 100%;
+    }
+    /* End Home Page*/
+    /* Portfolio */
+    .portfolio-container{
+        margin-top: 60px;
+    }
+
+    .item {
+        max-width: 225px;
+        max-height: 225px;
+    }
+    .item img{
+        max-width: 225px;
+        max-height: 225px;
+    }
+    .make-caps {
+        padding-top: 50px;
+    }
+    /* End Portfoilio Page*/
+    /* Resume */
+    .resume-container{
+        margin-bottom: 50px;
+        max-width: 75%;
+    }
+
+    .resume-header{
+        text-align: right;
+        margin: 65px 10px;
+    }
+
+    .job-title{
+        text-align: right;
+    }
+
+    .job-description{
+        padding-left: 50px;
+        border: none;
+        border-left: solid black 1px;
+    }
+
+    .job-description li{
+        text-align: left;
+    }
+
+    .resume-row-seperator{
+        padding-bottom: 75px;
+    }
+
+    .education{
+        text-align: right;
+    }
+    /* End Resume Page*/
+    /* About */
+    .about-container{
+        max-width: 90%;
+        margin-top: 75px;
+        padding-left: 10px;
+    }
+    /* End About Page*/
+    /* Credits */
+
+    /* End Credits Page */
+}
+
+@media all and (max-width: 1440px) and (min-width: 1025px) {
+    /* Navbar */
+
+    /*End Navbar*/
+    /* Home*/
+    .landing-img-container{
+        margin-top: 30px;
+    }
+
+    #home-jumbo{
+        padding-bottom: 200px;
+    }
+
+    .word-box{
+        margin-top: 470px;
+    }
+
+    .social{
+        margin-top: 100%;
+    }
+    /* End Home Page*/
+    /* Portfolio */
+    .portfolio-container {
+        margin: 25px 0 0 30px;
+    }
+
+    .image-area{
+        max-width: 950px;
+    }
+    /* End Portfoilio Page*/
+    /* Resume */
+    .resume-container{
+        margin-bottom: 100px;
+        max-width: 75%;
+    }
+
+    .resume-header{
+        text-align: right;
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+
+    .job-title{
+        text-align: right;
+    }
+
+    .job-description{
+        padding-left: 50px;
+        border: none;
+        border-left: solid black 1px;
+    }
+
+    .job-description li{
+        text-align: left;
+    }
+
+    .resume-row-seperator{
+        padding-bottom: 75px;
+    }
+
+    .education{
+        text-align: right;
+    }
+    /* End Resume Page*/
+    /* About */
+    .about-container{
+        margin-top: 75px;
+        padding-left: 50px;
+        max-width: 90%;
+    }
+    /* End About Page*/
+    /* Credits */
+
+    /* End Credits Page */
+}
+
+@media all and (max-width: 2000px) and (min-width: 1441px) {
+    /* Navbar */
+
+    /*End Navbar*/
+    /* Home*/
+    .landing-img-container{
+        margin-top: 30px;
+    }
+
+    #home-jumbo{
+        padding-bottom: 200px;
+    }
+
+    .word-box{
+        margin-top: 470px;
+    }
+    /* End Home Page*/
+    /* Portfolio */
+    .portfolio-container {
+        width: 1000px;
+        margin: 20px 0 0 15%;
+    }
+
+    .social{
+        margin-top: 100%;
+    }
+    /* End Portfoilio Page*/
+    /* Resume */
+    .resume-container{
+        margin-bottom: 100px;
+    }
+
+    .resume-header{
+        text-align: right;
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+
+    .job-title{
+        text-align: right;
+    }
+
+    .job-description{
+        padding-left: 50px;
+        border: none;
+        border-left: solid black 1px;
+    }
+
+    .job-description li{
+        text-align: left;
+    }
+
+    .resume-row-seperator{
+        padding-bottom: 75px;
+    }
+
+    .education{
+        text-align: right;
+    }
+    /* End Resume Page*/
+    /* About */
+
+    /* End About Page*/
+    /* Credits */
+
+    /* End Credits Page */
+}
+
+@media all and (min-width: 2000px) {
+    /* Navbar */
+
+    /*End Navbar*/
+    /* Home*/
+    .landing-img-container{
+        margin-top: 30px;
+    }
+
+    #home-jumbo{
+        padding-bottom: 200px;
+    }
+
+    .word-box{
+        margin-top: 470px;
+    }
+    /* End Home Page*/
+    /* Portfolio */
+    .portfolio-container {
+        width: 1000px;
+        margin: 20px 0 0 20%;
+    }
+
+    .social{
+        margin-top: 100%;
+    }
+    /* End Portfoilio Page*/
+    /* Resume */
+    .resume-container{
+        margin-bottom: 100px;
+    }
+
+    .resume-header{
+        text-align: right;
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+
+    .job-title{
+        text-align: right;
+    }
+
+    .job-description{
+        padding-left: 50px;
+        border: none;
+        border-left: solid black 1px;
+    }
+
+    .job-description li{
+        text-align: left;
+    }
+
+    .resume-row-seperator{
+        padding-bottom: 75px;
+    }
+
+    .education{
+        text-align: right;
+    }
+    /* End Resume Page*/
+    /* About */
+
+    /* End About Page*/
+    /* Credits */
+
+    /* End Credits Page */
+}
+
+@media all and (max-width: 991px) and (min-width: 769px) {
+    .job-description{
+        padding-left: 60px;
+        border: none;
+    }
+}
+
+@media all and (max-width: 1199px) and (min-width: 1025px) {
+    .item {
+        max-width: 225px;
+        max-height: 225px;
+    }
+    .item img{
+        max-width: 225px;
+        max-height: 225px;
+    }
+
+    .make-caps{
+        text-transform: uppercase;
+        padding-top: 50px;
+    }
+}
+
+@media all and (max-width: 979px) and (min-width: 769px) {
+    .item {
+        max-width: 170px;
+        max-height: 170px;
+    }
+    .item img{
+        max-width: 170px;
+        max-height: 170px;
+    }
+}
+
+@media all and (max-height: 800px)  {
+    .social {
+	margin-top: 45%;
+    }
+    .landing-img-container{
+	height: 650px;
+    }
+    .word-box{
+	margin-top: 380px;
+    }
+}
