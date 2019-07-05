@@ -24,9 +24,14 @@ $( document ).ready(function() {
           visElm.hide();
         }
         $(linkHash).addClass('animated fadeIn');
-        $(linkHash).show();
+        // $(linkHash).show();
+        $(linkHash).css("display", "block");
       }
     });
+
+    $('i#print-page').on('click', function(){
+		    window.print();
+    })
 
     showDefault();
 });
@@ -44,4 +49,9 @@ function showDefault() {
       $('.menu-about').addClass('highlighted');
     }
   }
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+}
+
+function scrollToTop() {
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
 }

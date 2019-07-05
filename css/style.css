@@ -5,22 +5,12 @@ html, body {
 }
 
 body {
-    background: #f9f9f9;
+    background: rgba(225,225,225,.3);
     background: url("../img/papyrus.png") fixed;
-    /* background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover; */
-
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto', sans-serif;
-}
-
-.paper-body {
-    /* min-height: 900px; */
 }
 
 .nav-col {
@@ -35,24 +25,23 @@ h1,h2,h3,h4,h5,h6 {
 aside.menu-wrapper {
     position: fixed;
     height: 100%;
-    background: #fff;
-    background: rgba(100,100,100,1);
+    /* background: #fff; */
+    background: rgba(50,75,100,1);
     margin: 0;
     padding: 0;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
 
 .menu-button {
-    text-align: center;
+    text-align: left;
     width: 100%;
-    height: 125px;
+    height: 50px;
 }
 
 a .menu-button {
-    font-size: 50px;
-    color: rgba(100,100,100,1);
+    /* color: rgba(100,100,100,1); */
     color: #fff;
-    padding: 0 15px;
+    padding: 10px 15px;
 }
 
 .menu-wrapper a:hover {
@@ -70,9 +59,39 @@ a .menu-button:hover {
   color: rgba(100,100,100,1) !important;
 }
 
+a .menu-button i {
+    display: inline-block;
+    font-size: 24px;
+}
+
+a .menu-button i.fas.fa-user {
+    color: #ba68c8;
+}
+
+a .menu-button i.fas.fa-file-alt {
+    color: #00acc1;
+}
+
+a .menu-button i.fas.fa-toolbox {
+    color: #1e88e5;
+}
+
+a .menu-button i.far.fa-chart-bar {
+    color: #43a047;
+}
+
+a .menu-button i.fas.fa-graduation-cap {
+    color: #bdbdbd;
+}
+
+a .menu-button i.fas.fa-envelope {
+    color: #ef5350;
+}
+
 span.link-text {
     font-size: 16px;
-    display: block;
+    display: inline-block;
+    padding: 0 7px;
 }
 
 .menu-button {
@@ -148,6 +167,7 @@ i.fas.fa-bars {
 
 .body-info {
   display: none;
+  padding: 3% 0 0 0;
 }
 
 .card-wrapper {
@@ -157,17 +177,17 @@ i.fas.fa-bars {
 
 .card {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    margin: 5% 0;
+    margin: 0% 0% 5% 0%;
 }
 
 .card-header {
-    background: #6a1b9a;
+    background: #ba68c8;
     color: white;
     font-size: 24px;
 }
 
 .card-header.dark-header {
-    background: #37006a;
+    background: #883997;
 }
 
 span.work-site {
@@ -199,11 +219,11 @@ section#skills .card-header.dark-header {
 }
 
 section#education .card-header {
-    background: #29434e;
+    background: #bdbdbd;
 }
 
 section#education .card-header.dark-header {
-    background: #546e7a;
+    background: #8d8d8d;
 }
 
 section#contact .card-header {
@@ -273,13 +293,6 @@ h2.resume-header {
 
 footer {
     height: 5%;
-}
-
-.print-button-wrapper {
-    position: absolute;
-    left: 2%;
-    text-align: center;
-    z-index: 2;
 }
 
 /* For large screens */
