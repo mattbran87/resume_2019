@@ -8,7 +8,14 @@ html, body {
 
 body {
     background: rgba(240,240,240,.3);
+    transition: transform 0.5s;
 }
+
+/* body {
+  background: url(../img/portland.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto', sans-serif;
@@ -39,6 +46,7 @@ aside.menu-wrapper {
     background: #FFFFFD;
     text-align: left;
     padding: 50px 0px 25px 15px;
+    color: rgba(100,100,100,1);
 }
 
 h6.menu-header-subtitle {
@@ -70,6 +78,7 @@ a .menu-button:hover {
 .highlighted {
   background: #FFFFFD !important;
   color: rgba(100,100,100,1) !important;
+  padding-left: 35px !important;
 }
 
 a .menu-button i {
@@ -110,6 +119,7 @@ span.link-text {
 .menu-button {
   border-bottom: 1px solid rgba(100,100,100,0.3);
   border-bottom: 1px solid #ffffff;
+  transition: all 0.5s ease;
 }
 
 .col-body {
@@ -258,6 +268,10 @@ section#contact .card-header {
 
 section#contact .card-header.dark-header {
     background: #b61827;
+}
+
+.image-me {
+    border-radius: 50%;
 }
 
 .quick-points ul {
