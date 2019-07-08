@@ -35,23 +35,17 @@ $( document ).ready(function() {
           visElm.hide();
         }
         $(linkHash).addClass('animated fadeIn');
-        // $(linkHash).show(); // .show() was causing issues with toggle // TODO: fix someday maybe. not a big deal, no performace issues noticed in mobile and desktop views.
+        //$(linkHash).show(); // .show() was causing issues with toggle // TODO: fix someday maybe. not a big deal, no performace issues noticed in mobile and desktop views.
         $(linkHash).css("display", "block");
       }
+      var date = new Date();
+      date = date.getTime();
+      console.log(date);
       var hashData = {
         "hash": linkHash,
-        "time": new Date()
+        "time": date
       };
       localStorage.setItem('hash', JSON.stringify(hashData));
-
-      if (JSON.parse(localStorage.getItem('hash')).hash == "#landing") {
-        $('body').css({"background": "url(img/portland.jpg) no-repeat",
-          "background-position": "center",
-          "background-size": "cover"
-        });
-      } else {
-        $('body').css("background", "rgba(240,240,240,.3)");
-      }
     });
 
     // print button on resume
@@ -59,17 +53,11 @@ $( document ).ready(function() {
 		    window.print();
     })
 
-    if (JSON.parse(localStorage.getItem('hash')).hash == "#landing") {
-      $('body').css({"background": "url(img/portland.jpg) no-repeat",
-        "background-position": "center",
-        "background-size": "cover"
-      });
-    } else {
-      $('body').css("background", "rgba(240,240,240,.3)");
-    }
-
     showDefault();
-    // window.onbeforeunload = updateHistory(localStorage.getItem('hash'))
+
+    // window.addEventListener("beforeunload", function (e) {
+    // 	localStorage.clear();
+    // });
 });
 
 // TODO: Fix page load. Hash not loaded on new user. Should clear cash if storage is old.
@@ -79,10 +67,10 @@ function showDefault() {
     var hashData = JSON.parse(localStorage.getItem('hash'));
     if (hashData != undefined && hashData.hash.length > 0) {
       var date = new Date();
-      var hashDataDate = Date(hashData.time);
+      // var hashDataDate = Date(hashData.time);
 
       console.log(date.getTime());
-      console.log(hashDataDate);
+      console.log(hashData.time);
       if (date == "") {
 
       } else {
@@ -97,8 +85,8 @@ function showDefault() {
       $('.menu-' + cleanHash).addClass('highlighted');
       // localStorage.removeItem('hash')
     } else {
-      $('#about').show();
-      $('.menu-about').addClass('highlighted');
+      $('#landing').show();
+      // $('.menu-about').addClass('highlighted');
     }
   }
 }
