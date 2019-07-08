@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700|Roboto:100,200,300,400,700&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/paper.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -18,44 +18,48 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-1 col-sm-2 nav-col">
+        <div class="col-xl-2 col-sm-2 nav-col">
           <aside class="menu-wrapper">
-            <a href="#about" data-order="0">
+            <div class="menu-header">
+              <h5 class="menu-header-title">Matt Brandenburg</h5>
+              <h6 class="menu-header-subtitle">Software Developer</h6>
+            </div>
+            <a href="#" data-section="about" data-order="0">
               <div class="menu-button menu-about">
                 <i class="fas fa-user"></i>
                 <span class="link-text">About</span>
               </div>
             </a>
 
-            <a href="#experience" data-order="1">
+            <a href="#" data-section="experience" data-order="1">
               <div class="menu-button menu-experience">
                 <i class="fas fa-file-alt"></i>
                 <span class="link-text">Work Experience</span>
               </div>
             </a>
 
-            <a href="#projects" data-order="2">
+            <a href="#" data-section="projects" data-order="2">
               <div class="menu-button menu-projects">
                 <i class="fas fa-toolbox"></i>
                 <span class="link-text">Projects</span>
               </div>
             </a>
 
-            <a href="#skills" data-order="3">
+            <a href="#" data-section="skills" data-order="3">
               <div class="menu-button menu-skills">
                 <i class="far fa-chart-bar"></i>
                 <span class="link-text">Skills</span>
               </div>
             </a>
 
-            <a href="#education" data-order="4">
+            <a href="#" data-section="education" data-order="4">
               <div class="menu-button menu-education">
                 <i class="fas fa-graduation-cap"></i>
                 <span class="link-text">Education</span>
               </div>
             </a>
 
-            <a href="#contact" data-order="5">
+            <a href="#" data-section="contact" data-order="5">
               <div class="menu-button menu-contact">
                 <i class="fas fa-envelope"></i>
                 <span class="link-text">Contact</span>
@@ -63,9 +67,9 @@
             </a>
           </aside>
         </div>
-        <div class=" col-xl-11 col-sm-10 col-body">
+        <div class=" col-xl-10 col-sm-10 col-body">
           <div class="paper paper-body">
-            <section class="body-info" id="about">
+            <section class="body-info" id="about" data-section="about">
               <div class="card-wrapper">
                 <div class="card text-center">
                   <div class="card-header dark-header"></div>
@@ -74,15 +78,15 @@
                   </div>
 
                   <div class="card-body">
-                    <h5 class="card-title">Independent full stack developer with a passion for design</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Developer, Consultant, Technology Fanatic</h5>
+                    <p class="card-text">I am a Software Developer and Technology Consultant located in Portland, Oregon. I have been working in the industry for about four years. In that time I have developed a wide variety of skills through the diverse needs of my clients. I am capable of making your ideas a reality, whether it's small changes to your existing application or building an app from the ground up.</p>
                   </div>
 
                 </div>
               </div>
             </section>
 
-            <section class="body-info" id="experience">
+            <section class="body-info" id="experience" data-section="experience">
               <div class="card-wrapper">
                 <div class="card text-center">
                   <div class="card-header dark-header"></div>
@@ -105,7 +109,7 @@
                     </div>
                   </div>
                   <div class="card-footer text-muted">
-                    February 2018 - Current <span class="work-site"><a href="http://www.masonbruce.com/">Visit Site</a></span>
+                    February 2018 - Current <span class="work-site"><a href="http://www.masonbruce.com/" target="_blank">Visit Site</a></span>
                   </div>
                 </div>
 
@@ -131,7 +135,7 @@
                     </div>
                   </div>
                   <div class="card-footer text-muted">
-                    August 2017 - February 2018 <span class="work-site"><a href="https://www.neturf.com/">Visit Site</a></span>
+                    August 2017 - February 2018 <span class="work-site"><a href="https://www.neturf.com/" target="_blank">Visit Site</a></span>
                   </div>
                 </div>
 
@@ -155,7 +159,7 @@
                     </div>
                   </div>
                   <div class="card-footer text-muted">
-                    May 2017 - September 2017 <span class="work-site"><a href="http://layerframe.com/">Visit Site</a></span>
+                    May 2017 - September 2017 <span class="work-site"><a href="http://layerframe.com/" target="_blank">Visit Site</a></span>
                   </div>
                 </div>
 
@@ -180,7 +184,7 @@
                     </div>
                   </div>
                   <div class="card-footer text-muted">
-                    January 2017 - August 2017 <span class="work-site"><a href="https://bravoweb.com/">Visit Site</a></span>
+                    January 2017 - August 2017 <span class="work-site"><a href="https://bravoweb.com/" target="_blank">Visit Site</a></span>
                   </div>
                 </div>
 
@@ -204,19 +208,19 @@
                     </div>
                   </div>
                   <div class="card-footer text-muted">
-                    January 2016 - Current <span class="work-site"><a href="http://versidigital.com/">Visit Site</a></span>
+                    January 2016 - Current <span class="work-site"><a href="http://versidigital.com/" target="_blank">Visit Site</a></span>
                   </div>
                 </div>
               </div>
             </section>
 
-            <section class="body-info" id="projects">
+            <section class="body-info" id="projects" data-section="projects">
               <div class="card-wrapper">
 
                 <div class="card text-center">
                   <div class="card-header dark-header"></div>
                   <div class="card-header">
-                    Project: Sky Valley Resorts
+                    Case Study: Sky Valley Resorts
                   </div>
 
                   <div class="card-body">
@@ -227,14 +231,14 @@
 
                   </div>
                   <div class="card-footer text-muted">
-                    <a href="https://www.skyvalleyresort.com/" target="_blank">Visit Site</a>
+                    <a href="https://www.skyvalleyresort.com/" target="_blank">Visit Client Site</a>
                   </div>
                 </div>
 
                 <div class="card text-center">
                   <div class="card-header dark-header"></div>
                   <div class="card-header">
-                    Project: DHI Equipment
+                    Case Study: DHI Equipment
                   </div>
 
                   <div class="card-body">
@@ -244,14 +248,14 @@
 
                   </div>
                   <div class="card-footer text-muted">
-                    <a href="http://dhiequipment.com/" target="_blank">Visit Site</a>
+                    <a href="http://dhiequipment.com/" target="_blank">Visit Client Site</a>
                   </div>
                 </div>
 
                 <div class="card text-center">
                   <div class="card-header dark-header"></div>
                   <div class="card-header">
-                    Client: PG&E SWAP 2.0
+                    Case Study: PG&E SWAP 2.0
                   </div>
 
                   <div class="card-body">
@@ -265,10 +269,27 @@
                   </div>
                 </div>
 
+                <div class="card text-center">
+                  <div class="card-header dark-header"></div>
+                  <div class="card-header">
+                    Case Study: Michigan Department of Lands
+                  </div>
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Forestry client with lots of data.
+                    </p>
+
+                  </div>
+                  <div class="card-footer text-muted">
+                    <a href="https://www.michigan.gov/dnr/" target="_blank">Visit Client Site</a>
+                  </div>
+                </div>
+
               </div>
             </section>
 
-            <section class="body-info" id="skills">
+            <section class="body-info" id="skills" data-section="skills">
               <div class="card-wrapper">
 
                 <div class="card text-center">
@@ -370,7 +391,7 @@
               </div>
             </section>
 
-            <section class="body-info" id="education">
+            <section class="body-info" id="education" data-section="education">
               <div class="card-wrapper">
 
                 <div class="card text-center">
@@ -424,7 +445,7 @@
               </div>
             </section>
 
-            <section class="body-info" id="contact">
+            <section class="body-info" id="contact" data-section="contact">
               <div class="card-wrapper">
 
                 <div class="card text-center">
@@ -440,7 +461,7 @@
                     <span class="contact-link"><a href="https://github.com/mattbran87" target="_blank"><i class="fab fa-github-square"></i></a></span>
                     <span class="contact-link"><a href="https://mattscoderesu.me/mailto:matt.bran87@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></span>
                     <h3>Resume</h3>
-                    <span class="contact-link"><a href="resume.html" target="_blank"><i class="far fa-file-pdf"></i></a></span>
+                    <span class="contact-link"><a href="resume.html" target="_blank"><i class="far fa-file-alt"></i></a></span>
                   </div>
                 </div>
 
