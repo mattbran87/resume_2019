@@ -40,7 +40,7 @@ $( document ).ready(function() {
       }
       var date = new Date();
       date = date.getTime();
-      console.log(date);
+
       var hashData = {
         "hash": linkHash,
         "time": date
@@ -54,25 +54,20 @@ $( document ).ready(function() {
     })
 
     showDefault();
-
-    // window.addEventListener("beforeunload", function (e) {
-    // 	localStorage.clear();
-    // });
 });
 
-// TODO: Fix page load. Hash not loaded on new user. Should clear cash if storage is old.
+// Show default section of landing page if no other section is stored. Clear storage and return to landing page if user has been away for longer than 15 minutes (900000ms).
 function showDefault() {
   var visElm = $('.body-info:visible');
   if (visElm.length == 0) {
     var hashData = JSON.parse(localStorage.getItem('hash'));
     if (hashData != undefined && hashData.hash.length > 0) {
       var date = new Date();
-      // var hashDataDate = Date(hashData.time);
-
-      console.log(date.getTime());
-      console.log(hashData.time);
-      if (date == "") {
-
+      var dateMs = date.getTime();
+      var timeDifference = dateMs - hashData.time;
+      if (timeDifference > 900000) {
+        var hash = '#landing';
+        localStorage.clear();
       } else {
         var hash = hashData.hash;
       }
@@ -83,18 +78,9 @@ function showDefault() {
       var cleanHash = hash.replace('#','');
       $(hash).show();
       $('.menu-' + cleanHash).addClass('highlighted');
-      // localStorage.removeItem('hash')
     } else {
       $('#landing').show();
       // $('.menu-about').addClass('highlighted');
     }
   }
-}
-
-function scrollToTop() {
-  document.body.scrollTop = document.documentElement.scrollTop = 0;
-}
-
-function updateHistory(curr) {
-    window.location.hash = curr;
 }
