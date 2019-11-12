@@ -39,14 +39,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 aside.menu-wrapper {
-  position: fixed;
-  height: 100%;
-  max-width: 25%;
-  /* background: #fff; */
-  background: #486b8e;
-  margin: 0;
-  padding: 0;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    position: fixed;
+    height: 100%;
+    width: 16.66%;
+    max-width: 16.66%;
+    /* background: #fff; */
+    background: #486b8e;
+    margin: 0;
+    padding: 0;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
 
 .menu-header {
@@ -365,14 +366,16 @@ footer {
 
 /* for screens less than 960px */
 @media only screen and (max-width: 960px) {
-
+  .nav-col {
+      display: block !important;
+  }
 }
 
 /* for screens greater than 768px */
 @media only screen and (min-width: 769px) {
-  .nav-col {
+  /* .nav-col {
       display: block !important;
-  }
+  } */
 }
 
 /* for screens less than 768px */
